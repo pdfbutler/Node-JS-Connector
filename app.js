@@ -32,9 +32,9 @@ l1_2.ProdName = "Prod 2";
 l1_2.ProdPrice = "500";
 l1_2.ProdQuantity = "12";
 
-var username = 'istuyver22';
-var password = '4bcb0e15-cbd3-4ca8-b9c6-ce9e5df67b22';
-var docConfigId = "2457a47d-829a-4a2b-8d6c-331fd877c2ec";
+var username = '<YOUR USERNAME>';
+var password = '<YOUR PASSWORD>';
+var docConfigId = '<YOUR DOC CONFIG ID>';
 //for(var i=0;i<10;i++) {
     //Call PDF Butler and generate your PDF!!!
     var cd = convert(username, password, mt, docConfigId, ds, callback);
