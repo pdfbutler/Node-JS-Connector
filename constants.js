@@ -14,3 +14,7 @@ exports.USERROLE = {
     ADMIN : "ADMIN",
     USER : "USER"
 };
+exports.CONVERTFILETYPE = {
+    PDF : "PDF",
+    DOCX : "DOCX"
+};
