@@ -1,4 +1,4 @@
-exports.CURRENT_VERSION = "v1.0";
+exports.CURRENT_VERSION = "v2.0";
 exports.URL = "www.pdfbutler.com";
 exports.PATH = "/convert";
 exports.ROLE_SEPERATOR = "-";
