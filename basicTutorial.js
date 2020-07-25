@@ -47,8 +47,10 @@ var cd = convert(username, password, mt, docConfigId, ds, callback);
 //  Did not wanted to introduce promise libraries to make the JS plugin as easy as possible.
 function callback(response) {
     console.log("result: " + response.result);
+    //console.log("result: " + JSON.stringify(response));
     //write to file (for example)
     
+	if(response.result === "SUCCESS") {
     fs.writeFile(response.metadata.targetName, response.base64, 'base64', function(err) {
         if(err) {
             console.log(err);
@@ -56,4 +58,9 @@ function callback(response) {
             console.log("file written with name: " + response.metadata.targetName);
         }
     });
+	} else {
+		response.issues.forEach(function (issue) { 
+            console.log(issue.level + " / " + issue.description);
+        });
+	}
 } 

@@ -16,7 +16,7 @@ module.exports = function convert(username, password, metadata, customerDocument
                 host: constants.URL,
                 path: constants.PATH,
                 method: 'POST',
-                headers:  {'Content-Type': 'application/json', 'Authorization': auth}
+                headers:  {'Content-Type': 'application/json', 'Authorization': auth, 'CADMUS_LOG_PREF': 'NONE', 'CADMUS_LOG_USER': 'me'}
             };
 
     var response = "";

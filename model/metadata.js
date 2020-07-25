@@ -5,4 +5,5 @@ module.exports = function metadata(userId, organizationId, stage, targetName, ve
     this.targetName = targetName;
     this.version = version;
     this.targetType = targetType;
+    this.locale = {};
 }

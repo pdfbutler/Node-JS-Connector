@@ -1,5 +1,5 @@
-exports.CURRENT_VERSION = "v2.0";
-exports.URL = "www.pdfbutler.com";
+exports.CURRENT_VERSION = "v8.0";
+exports.URL = "us1.pdfbutler.com";
 exports.PATH = "/convert";
 exports.ROLE_SEPERATOR = "-";
 exports.STAGE = {
