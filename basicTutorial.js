@@ -13,7 +13,8 @@ console.log(msg);
 //  stage: Stage is TEST of PROD. You can have the same document in these stages
 //  targetname: if you want PDF Butler to create a name for your PDF, specify how it should look
 //  version: PDF Butler API version 
-var mt = new metadata("istuyver", "CloudCrossing.Sales", constants.STAGE.TEST, "[[!AccountName!]]_[[!StageName!]]", constants.CURRENT_VERSION, constants.CONVERTFILETYPE.PDF);
+var alternativeName = "EN";
+var mt = new metadata("istuyver", "CloudCrossing.Sales", constants.STAGE.TEST, "[[!AccountName!]]_[[!StageName!]]", constants.CURRENT_VERSION, constants.CONVERTFILETYPE.PDF, alternativeName);
 
 //Generate you datasource, setup the data PDF Butler should use to generate your PDF
 var ds = new datasources();
